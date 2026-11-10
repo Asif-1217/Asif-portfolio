@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Asif Al Masud | CSE Student & Competitive Programmer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Asif Al Masud – Computer Science and Engineering student at Daffodil International University, competitive programmer with 500+ problems solved."
+    />
+    <meta name="keywords" content="Asif Al Masud, competitive programming, CSE student, Daffodil International University, Codeforces, C++, algorithms, portfolio" />
+    <meta name="author" content="Asif Al Masud" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Asif Al Masud | CSE Student & Competitive Programmer" />
+    <meta
+      property="og:description"
+      content="Personal portfolio of Asif Al Masud – competitive programmer and CSE student."
+    />
+    <meta property="og:url" content="https://asif-almasud.dev" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Asif Al Masud | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Competitive programmer | CSE Student at Daffodil International University"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme init script: prevent flash -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme');
+          var theme = stored;
+          if (!theme) {
+            theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          }
+          if (theme === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.remove('light');
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
